@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JsComponent } from './js.component';
+import { PythonComponentComponent } from './python-component.component';
 
-describe('JsComponent', () => {
-  let component: JsComponent;
-  let fixture: ComponentFixture<JsComponent>;
+describe('PythonComponentComponent', () => {
+  let component: PythonComponentComponent;
+  let fixture: ComponentFixture<PythonComponentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JsComponent ]
+      declarations: [ PythonComponentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JsComponent);
+    fixture = TestBed.createComponent(PythonComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

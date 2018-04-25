@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RubyComponent } from './ruby.component';
+import { RubyComponentComponent } from './ruby-component.component';
 
-describe('RubyComponent', () => {
-  let component: RubyComponent;
-  let fixture: ComponentFixture<RubyComponent>;
+describe('RubyComponentComponent', () => {
+  let component: RubyComponentComponent;
+  let fixture: ComponentFixture<RubyComponentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RubyComponent ]
+      declarations: [ RubyComponentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RubyComponent);
+    fixture = TestBed.createComponent(RubyComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

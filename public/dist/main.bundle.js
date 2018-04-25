@@ -51,14 +51,14 @@ exports.AppRoutingModule = AppRoutingModule;
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "label > input{ /* HIDE RADIO */\r\n  visibility: hidden; /* Makes input not-clickable */\r\n  position: absolute; /* Remove input from document flow */\r\n}\r\nlabel > input + img{ /* IMAGE STYLES */\r\n  cursor:pointer;\r\n  border:2px solid transparent;\r\n}\r\nlabel > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */\r\n  border:2px solid #f00;\r\n}\r\nlabel > img {\r\n    height: 40px;\r\n}\r\nh1{\r\n    color: red;\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Alex Tran's Portfolio</h1>\n\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  \n</label>\n<p>Things to do: </p>\n<ul>\n  <li>Get picture in</li>\n  <li>Display Banner</li>\n</ul>\n<router-outlet></router-outlet>\n"
+module.exports = "<h1>Alex Tran's Portfolio</h1>\n\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"JavaScript.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"python.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"RUBY.png\">\n</label>\n<p>Things to do: </p>\n<ul>\n  <li>Get picture in</li>\n  <li>Display Banner</li>\n</ul>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -109,9 +109,9 @@ var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-b
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var app_routing_module_1 = __webpack_require__("./src/app/app-routing.module.ts");
 var app_component_1 = __webpack_require__("./src/app/app.component.ts");
-var js_component_1 = __webpack_require__("./src/app/js/js.component.ts");
-var python_component_1 = __webpack_require__("./src/app/python/python.component.ts");
-var ruby_component_1 = __webpack_require__("./src/app/ruby/ruby.component.ts");
+var js_component_component_1 = __webpack_require__("./src/app/js-component/js-component.component.ts");
+var python_component_component_1 = __webpack_require__("./src/app/python-component/python-component.component.ts");
+var ruby_component_component_1 = __webpack_require__("./src/app/ruby-component/ruby-component.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -119,9 +119,9 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                js_component_1.JsComponent,
-                python_component_1.PythonComponent,
-                ruby_component_1.RubyComponent
+                js_component_component_1.JsComponentComponent,
+                python_component_component_1.PythonComponentComponent,
+                ruby_component_component_1.RubyComponentComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -138,21 +138,21 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ "./src/app/js/js.component.css":
+/***/ "./src/app/js-component/js-component.component.css":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/js/js.component.html":
+/***/ "./src/app/js-component/js-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  js works!\n</p>\n"
+module.exports = "<p>\n  js-component works!\n</p>\n"
 
 /***/ }),
 
-/***/ "./src/app/js/js.component.ts":
+/***/ "./src/app/js-component/js-component.component.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168,41 +168,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var JsComponent = /** @class */ (function () {
-    function JsComponent() {
+var JsComponentComponent = /** @class */ (function () {
+    function JsComponentComponent() {
     }
-    JsComponent.prototype.ngOnInit = function () {
+    JsComponentComponent.prototype.ngOnInit = function () {
     };
-    JsComponent = __decorate([
+    JsComponentComponent = __decorate([
         core_1.Component({
-            selector: 'app-js',
-            template: __webpack_require__("./src/app/js/js.component.html"),
-            styles: [__webpack_require__("./src/app/js/js.component.css")]
+            selector: 'app-js-component',
+            template: __webpack_require__("./src/app/js-component/js-component.component.html"),
+            styles: [__webpack_require__("./src/app/js-component/js-component.component.css")]
         }),
         __metadata("design:paramtypes", [])
-    ], JsComponent);
-    return JsComponent;
+    ], JsComponentComponent);
+    return JsComponentComponent;
 }());
-exports.JsComponent = JsComponent;
+exports.JsComponentComponent = JsComponentComponent;
 
 
 /***/ }),
 
-/***/ "./src/app/python/python.component.css":
+/***/ "./src/app/python-component/python-component.component.css":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/python/python.component.html":
+/***/ "./src/app/python-component/python-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  python works!\n</p>\n"
+module.exports = "<p>\n  python-component works!\n</p>\n"
 
 /***/ }),
 
-/***/ "./src/app/python/python.component.ts":
+/***/ "./src/app/python-component/python-component.component.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -218,41 +218,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var PythonComponent = /** @class */ (function () {
-    function PythonComponent() {
+var PythonComponentComponent = /** @class */ (function () {
+    function PythonComponentComponent() {
     }
-    PythonComponent.prototype.ngOnInit = function () {
+    PythonComponentComponent.prototype.ngOnInit = function () {
     };
-    PythonComponent = __decorate([
+    PythonComponentComponent = __decorate([
         core_1.Component({
-            selector: 'app-python',
-            template: __webpack_require__("./src/app/python/python.component.html"),
-            styles: [__webpack_require__("./src/app/python/python.component.css")]
+            selector: 'app-python-component',
+            template: __webpack_require__("./src/app/python-component/python-component.component.html"),
+            styles: [__webpack_require__("./src/app/python-component/python-component.component.css")]
         }),
         __metadata("design:paramtypes", [])
-    ], PythonComponent);
-    return PythonComponent;
+    ], PythonComponentComponent);
+    return PythonComponentComponent;
 }());
-exports.PythonComponent = PythonComponent;
+exports.PythonComponentComponent = PythonComponentComponent;
 
 
 /***/ }),
 
-/***/ "./src/app/ruby/ruby.component.css":
+/***/ "./src/app/ruby-component/ruby-component.component.css":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/ruby/ruby.component.html":
+/***/ "./src/app/ruby-component/ruby-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  ruby works!\n</p>\n"
+module.exports = "<p>\n  ruby-component works!\n</p>\n"
 
 /***/ }),
 
-/***/ "./src/app/ruby/ruby.component.ts":
+/***/ "./src/app/ruby-component/ruby-component.component.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -268,22 +268,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var RubyComponent = /** @class */ (function () {
-    function RubyComponent() {
+var RubyComponentComponent = /** @class */ (function () {
+    function RubyComponentComponent() {
     }
-    RubyComponent.prototype.ngOnInit = function () {
+    RubyComponentComponent.prototype.ngOnInit = function () {
     };
-    RubyComponent = __decorate([
+    RubyComponentComponent = __decorate([
         core_1.Component({
-            selector: 'app-ruby',
-            template: __webpack_require__("./src/app/ruby/ruby.component.html"),
-            styles: [__webpack_require__("./src/app/ruby/ruby.component.css")]
+            selector: 'app-ruby-component',
+            template: __webpack_require__("./src/app/ruby-component/ruby-component.component.html"),
+            styles: [__webpack_require__("./src/app/ruby-component/ruby-component.component.css")]
         }),
         __metadata("design:paramtypes", [])
-    ], RubyComponent);
-    return RubyComponent;
+    ], RubyComponentComponent);
+    return RubyComponentComponent;
 }());
-exports.RubyComponent = RubyComponent;
+exports.RubyComponentComponent = RubyComponentComponent;
 
 
 /***/ }),
