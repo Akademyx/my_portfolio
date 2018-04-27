@@ -51,14 +51,14 @@ exports.AppRoutingModule = AppRoutingModule;
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "label > input{ /* HIDE RADIO */\r\n  visibility: hidden; /* Makes input not-clickable */\r\n  position: absolute; /* Remove input from document flow */\r\n}\r\nlabel > input + img{ /* IMAGE STYLES */\r\n  cursor:pointer;\r\n  border:2px solid transparent;\r\n}\r\nlabel > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */\r\n  border:2px solid #f00;\r\n}\r\nlabel > img {\r\n    height: 40px;\r\n}\r\nh1{\r\n    color: red;\r\n}"
+module.exports = "label > input{ /* HIDE RADIO */\r\n  visibility: hidden; /* Makes input not-clickable */\r\n  position: absolute; /* Remove input from document flow */\r\n}\r\nlabel > input + img{ /* IMAGE STYLES */\r\n  cursor:pointer;\r\n  border:2px solid transparent;\r\n}\r\nlabel > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */\r\n  border:2px solid #f00;\r\n}\r\nlabel > img {\r\n    height: 40px;\r\n}\r\nh1{\r\n    color: red;\r\n}\r\nimg:hover {\r\n    border-radius: 100%;\r\n    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n    box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Alex Tran's Portfolio</h1>\n\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"JavaScript.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"python.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img src=\"RUBY.png\">\n</label>\n<p>Things to do: </p>\n<ul>\n  <li>Get picture in</li>\n  <li>Display Banner</li>\n</ul>\n<router-outlet></router-outlet>\n"
+module.exports = "<h1>Alex Tran's Portfolio</h1>\n\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img id='js' src=\"JavaScript.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img id='py' src=\"python.png\">\n</label>\n<label>\n  <input type=\"radio\" name=\"fb\" value=\"js\"/>\n  <img id='ruby' src=\"RUBY.png\">\n</label>\n<p>Things to do: </p>\n<ul>\n  <li>Get picture in</li>\n  <li>Display Banner</li>\n</ul>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 

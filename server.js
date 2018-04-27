@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 var path = require('path');
 app.use(express.static(__dirname + '/public/dist'));
+app.use(express.static(__dirname + '/static'));
+app.set('views', __dirname + '/views'); 
 // configure body-parser to read JSON
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
