@@ -1,3 +1,35 @@
+
+#magic{
+    color: #777;
+    border-right: 1px solid #777;
+    padding-right: 7px;
+    display: inline;
+    behavior:'smooth';
+    white-space: pre;
+}
+table{
+  display:inline-block;
+  vertical-align:text-bottom;
+}
+
+img#me {
+    border-radius: 100%;
+    height: 200px;
+    margin-left: 25px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#header{
+  background-color: rgba(53, 102, 24, 0.699);
+  height: 250px;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+#image_container {
+  text-align:center;
+}
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
@@ -7,7 +39,13 @@ label > input + img{ /* IMAGE STYLES */
   border:2px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid #f00;
+  /* border:2px solid #f00; */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
+    box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
 }
 
 label > img {

@@ -1,20 +1,68 @@
-<h1>Alex Tran's Portfolio</h1>
-
-<label>
-  <input type="radio" name="fb" value="js"/>
-  <img id='js' src="JavaScript.png">
-</label>
-<label>
-  <input type="radio" name="fb" value="js"/>
-  <img id='py' src="python.png">
-</label>
-<label>
-  <input type="radio" name="fb" value="js"/>
-  <img id='ruby' src="RUBY.png">
-</label>
-<p>Things to do: </p>
+<div id="header">
+  <img id="me" src="alex.jpg">
+  <!-- <script>
+    var words = ["a lot of fun", "about not giving up", "challenging and empowering", "creative expression"],
+      el = document.getElementById('magic'),
+      word_counter = 0,
+      character_counter = 0;
+    function updateText() {
+      el.innerHTML = el.innerHTML + words[word_counter][character_counter++];
+      if ((character_counter) == (words[word_counter].length + 1)) {
+        word_counter++; 	//choose a different word
+        character_counter = 0;	//start over with the first character of the word
+        el.innerHTML = '';  //set the html to be blank
+        //if we're displaying the last word, go back to the first word
+        if (word_counter == words.length)
+          word_counter = 0;
+      }
+    }
+    // window.setTimeout(init, 200)
+    setInterval(updateText, 200);
+  </script> -->
+  <table>
+    <tr>
+      <th><p>JS Image here</p></th>
+      <th>Ruby Image here</th>
+      <th>Python Image here</th>
+    </tr>
+    <tr>
+        <td>Angular</td>
+        <td>React</td>
+        <td>Express</td>
+        <td>NodeJs</td>
+      </tr>
+      <tr>
+        <td>Rails</td>
+      </tr>
+      <tr>
+        <td>Django</td>
+        <td>Flask</td>
+      </tr>
+  </table>
+  
+  <div id="image_container">
+  <label>
+    <input type="radio" name="fb" />
+    <img class='icon' src="home.png">
+  </label>
+    <label>
+      <input type="radio" name="fb"/>
+      <img class='icon' src="JavaScript.png">
+    </label>
+    <label>
+      <input type="radio" name="fb" />
+      <img class='icon' src="python.png">
+    </label>
+    <label>
+      <input type="radio" name="fb" />
+      <img class='icon' src="RUBY.png">
+    </label>
+  </div>
+</div>
+  <p>Things to do: </p>
 <ul>
   <li>Get picture in</li>
   <li>Display Banner</li>
 </ul>
 <router-outlet></router-outlet>
+
