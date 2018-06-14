@@ -1,60 +1,24 @@
 <div id="header">
   <img id="me" src="alex.jpg">
-  <!-- <script>
-    var words = ["a lot of fun", "about not giving up", "challenging and empowering", "creative expression"],
-      el = document.getElementById('magic'),
-      word_counter = 0,
-      character_counter = 0;
-    function updateText() {
-      el.innerHTML = el.innerHTML + words[word_counter][character_counter++];
-      if ((character_counter) == (words[word_counter].length + 1)) {
-        word_counter++; 	//choose a different word
-        character_counter = 0;	//start over with the first character of the word
-        el.innerHTML = '';  //set the html to be blank
-        //if we're displaying the last word, go back to the first word
-        if (word_counter == words.length)
-          word_counter = 0;
-      }
-    }
-    // window.setTimeout(init, 200)
-    setInterval(updateText, 200);
-  </script> -->
-  <table>
-    <tr>
-      <th><p>JS Image here</p></th>
-      <th>Ruby Image here</th>
-      <th>Python Image here</th>
-    </tr>
-    <tr>
-        <td>Angular</td>
-        <td>React</td>
-        <td>Express</td>
-        <td>NodeJs</td>
-      </tr>
-      <tr>
-        <td>Rails</td>
-      </tr>
-      <tr>
-        <td>Django</td>
-        <td>Flask</td>
-      </tr>
-  </table>
+ <div id="profile">
+   <p>I am a upcoming software developer with emphasis on web development. My education comes largely from an intense paced bootcame namely Coding Dojo.</p>
+  </div>
   
   <div id="image_container">
   <label>
-    <input type="radio" name="fb" />
-    <img class='icon' src="home.png">
+    <input type="radio" name="fb" checked="checked" [routerLink]="['home']" />
+    <img class='icon' src="home.png" >
   </label>
     <label>
-      <input type="radio" name="fb"/>
+      <input type="radio" name="fb" [routerLink]="['js']"/>
       <img class='icon' src="JavaScript.png">
     </label>
     <label>
-      <input type="radio" name="fb" />
+      <input type="radio" name="fb" [routerLink]="['python']"/>
       <img class='icon' src="python.png">
     </label>
     <label>
-      <input type="radio" name="fb" />
+      <input type="radio" name="fb" [routerLink]="['ruby']"/>
       <img class='icon' src="RUBY.png">
     </label>
   </div>

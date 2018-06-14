@@ -1,4 +1,6 @@
-
+body {
+  text-align: center;
+}
 #magic{
     color: #777;
     border-right: 1px solid #777;
@@ -21,15 +23,49 @@ img#me {
 }
 
 #header{
-  background-color: rgba(53, 102, 24, 0.699);
-  height: 250px;
+  /* background-color: rgba(53, 102, 24, 0.699); */
+  min-height: 250px;
   width: auto;
   margin: 0px;
   padding: 0px;
+  text-align:center;
+  border-radius: 0 0 40% 40%;
+  border-bottom: goldenrod 10px solid;
+  box-shadow: inset 0 1px 0 yellow;
+  background-image: url("/assets/Work_desk.jpg");
+  background-repeat: no-repeat;
+  background-size: 1530px;
 }
 #image_container {
   text-align:center;
 }
+
+#profile {
+  min-height: 402px;
+  width: 780px;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url(/assets/cpu_code_icon.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  /* background-color: yellow; */
+  /* border: black solid 1px; */
+  margin-left: 160px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  border-radius: 6%;
+}
+
+#profile > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 100px;
+  margin-top: 98px;
+  font-size: 16pt;
+  color: #21d363;
+  text-shadow: #1d6e3c 2px 2px 8px;
+}
+
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
@@ -43,9 +79,12 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
+    -webkit-box-shadow: 0px 0px 30px 0px #fde61c;
+    -moz-box-shadow: 0px 0px 30px 0px #fde61c;
+    box-shadow: 0px 0px 30px 0px #fde61c;
+    /* -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
-    box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
+    box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67); */
 }
 
 label > img {
@@ -56,7 +95,7 @@ h1{
     color: red;
 }
 
-img:hover {
+label>img:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 100%;
