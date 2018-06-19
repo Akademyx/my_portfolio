@@ -1,12 +1,32 @@
 <div id="header">
+
   <img id="me" src="alex.jpg">
- <div id="profile">
-   <p>I am a upcoming software developer with emphasis on web development. My education comes largely from an intense paced bootcame namely Coding Dojo.</p>
+  <div id="profile">
+
+      <table>
+        <tr>
+        <th>Email</th>
+        <th>LxDemikz@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Github</th>
+        <th><a href="https://github.com/Akademyx">
+        <span class="color" >Akademyx's Profile</span>
+        </a></th>
+      </tr>
+      <tr>
+        <th>LinkedIn</th>
+        <th><a href="https://www.linkedin.com/in/lxtran8501/">
+          <span class="color" >Alex Tran</span>
+        </a></th>
+      </tr>
+    </table>
+   <p id="bio">I am a upcoming software developer with emphasis on web development. My education comes largely from an intense paced bootcame namely Coding Dojo.</p>
   </div>
-  
+ 
   <div id="image_container">
   <label>
-    <input type="radio" name="fb" checked="checked" [routerLink]="['home']" />
+    <input type="radio" name="fb" checked="checked" [routerLink]="['']" />
     <img class='icon' src="home.png" >
   </label>
     <label>
@@ -23,10 +43,7 @@
     </label>
   </div>
 </div>
-  <p>Things to do: </p>
-<ul>
-  <li>Get picture in</li>
-  <li>Display Banner</li>
-</ul>
+
+<div id="line-break"></div>
 <router-outlet></router-outlet>
 

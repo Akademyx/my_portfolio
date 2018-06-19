@@ -36,7 +36,7 @@ var js_component_component_1 = __webpack_require__("./src/app/js-component/js-co
 var python_component_component_1 = __webpack_require__("./src/app/python-component/python-component.component.ts");
 var ruby_component_component_1 = __webpack_require__("./src/app/ruby-component/ruby-component.component.ts");
 var routes = [
-    { path: 'home', component: home_component_1.HomeComponent },
+    { path: '', component: home_component_1.HomeComponent },
     { path: 'js', component: js_component_component_1.JsComponentComponent },
     { path: 'python', component: python_component_component_1.PythonComponentComponent },
     { path: 'ruby', component: ruby_component_component_1.RubyComponentComponent },
@@ -60,14 +60,14 @@ exports.AppRoutingModule = AppRoutingModule;
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "body {\r\n  text-align: center;\r\n}\r\n#magic{\r\n    color: #777;\r\n    border-right: 1px solid #777;\r\n    padding-right: 7px;\r\n    display: inline;\r\n    behavior:'smooth';\r\n    white-space: pre;\r\n}\r\ntable{\r\n  display:inline-block;\r\n  vertical-align:text-bottom;\r\n}\r\nimg#me {\r\n    border-radius: 100%;\r\n    height: 200px;\r\n    margin-left: 25px;\r\n    margin-top: 10px;\r\n    display: inline-block;\r\n}\r\n#header{\r\n  /* background-color: rgba(53, 102, 24, 0.699); */\r\n  min-height: 250px;\r\n  width: auto;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  text-align:center;\r\n  border-radius: 0 0 40% 40%;\r\n  border-bottom: goldenrod 10px solid;\r\n  -webkit-box-shadow: inset 0 1px 0 yellow;\r\n          box-shadow: inset 0 1px 0 yellow;\r\n  background-image: url(\"/assets/Work_desk.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: 1530px;\r\n}\r\n#image_container {\r\n  text-align:center;\r\n}\r\n#profile {\r\n  min-height: 402px;\r\n  width: 780px;\r\n  padding: 15px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  background-image: url(/assets/cpu_code_icon.png);\r\n  background-repeat: no-repeat;\r\n  background-size: 800px;\r\n  /* background-color: yellow; */\r\n  /* border: black solid 1px; */\r\n  margin-left: 160px;\r\n  margin-top: 15px;\r\n  margin-bottom: 17px;\r\n  border-radius: 6%;\r\n}\r\n#profile > p {\r\n  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\r\n  padding: 100px;\r\n  margin-top: 98px;\r\n  font-size: 16pt;\r\n  color: #21d363;\r\n  text-shadow: #1d6e3c 2px 2px 8px;\r\n}\r\nlabel > input{ /* HIDE RADIO */\r\n  visibility: hidden; /* Makes input not-clickable */\r\n  position: absolute; /* Remove input from document flow */\r\n}\r\nlabel > input + img{ /* IMAGE STYLES */\r\n  cursor:pointer;\r\n  border:2px solid transparent;\r\n}\r\nlabel > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */\r\n  /* border:2px solid #f00; */\r\n    border-radius: 100%;\r\n    -webkit-box-shadow: 0px 0px 30px 0px #fde61c;\r\n    box-shadow: 0px 0px 30px 0px #fde61c;\r\n    /* -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);\r\n    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);\r\n    box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67); */\r\n}\r\nlabel > img {\r\n    height: 40px;\r\n}\r\nh1{\r\n    color: red;\r\n}\r\nlabel>img:hover {\r\n    border-radius: 100%;\r\n    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n    box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n}"
+module.exports = "body {\r\n  text-align: center;\r\n}\r\n#magic{\r\n    color: #777;\r\n    border-right: 1px solid #777;\r\n    padding-right: 7px;\r\n    display: inline;\r\n    behavior:'smooth';\r\n    white-space: pre;\r\n}\r\ntable{\r\n  display:inline-block;\r\n  vertical-align:text-bottom;\r\n  margin: 73px 10px -68px 162px;\r\n}\r\nimg#me {\r\n    border-radius: 100%;\r\n    height: 200px;\r\n    margin-left: 25px;\r\n    margin-top: 10px;\r\n    display: inline-block;\r\n}\r\n#header{\r\n  /* background-color: rgba(53, 102, 24, 0.699); */\r\n  min-height: 250px;\r\n  width: auto;\r\n  margin: 0px;\r\n  padding: 10px;\r\n  text-align:center;\r\n  border-radius: 0 0 40% 40%;\r\n  border-bottom: goldenrod 10px solid;\r\n  -webkit-box-shadow: inset 0 1px 0 yellow;\r\n          box-shadow: inset 0 1px 0 yellow;\r\n  background-image: url(\"/assets/Work_desk.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: 100% 100%;\r\n  /* position:relative; */\r\n  background-color: rgba(0, 255, 0, 0.67)\r\n}\r\n#line-break {\r\n  height: auto;\r\n  margin: 25px 98px;\r\n  border: 0.5px solid rgba(7, 3, 3, 0.904);\r\n  -webkit-box-shadow: 0px 5px 5px #888888;\r\n          box-shadow: 0px 5px 5px #888888;\r\n}\r\n#image_container {\r\n  text-align:center;\r\n}\r\n#profile {\r\n  /* min-height: 421px; */\r\n  width: 830px;\r\n  padding: 0px;\r\n  margin: auto;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  background-image: url(/assets/cpu_icon.png);\r\n  background-repeat: no-repeat;\r\n  background-size: 100%;\r\n  /* margin-left: 160px; */\r\n  /* margin-top: 15px; */\r\n  margin-bottom: 17px;\r\n  border-radius: 6%;\r\n  background-color: rgba(0,0,0,0.5);\r\n}\r\n.color {\r\n  color: green;\r\n}\r\n#profile > p, table {\r\n  font-size: 16pt;\r\n  color: #21d363;\r\n  text-shadow: #1d6e3c 2px 2px 8px;\r\n  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;\r\n}\r\n#profile > #bio {\r\n\r\n  padding: 100px;\r\n  margin-top: 98px;\r\n}\r\nlabel > input{ /* HIDE RADIO */\r\n  visibility: hidden; /* Makes input not-clickable */\r\n  position: absolute; /* Remove input from document flow */\r\n}\r\nlabel > input + img{ /* IMAGE STYLES */\r\n  cursor:pointer;\r\n  border:2px solid transparent;\r\n}\r\nlabel > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */\r\n  /* border:2px solid #f00; */\r\n    border-radius: 100%;\r\n    -webkit-box-shadow: 0px 0px 30px 0px #fde61c;\r\n    box-shadow: 0px 0px 30px 0px #fde61c;\r\n    /* -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);\r\n    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);\r\n    box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67); */\r\n}\r\nlabel > img {\r\n    height: 40px;\r\n}\r\nh1{\r\n    color: red;\r\n}\r\nlabel>img:hover {\r\n    border-radius: 100%;\r\n    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n    box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);\r\n}\r\n.project {\r\n    height: 250px;\r\n    width: 400px;\r\n    border: 1px solid black;\r\n    margin: auto;\r\n    padding: auto;\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"header\">\n  <img id=\"me\" src=\"alex.jpg\">\n <div id=\"profile\">\n   <p>I am a upcoming software developer with emphasis on web development. My education comes largely from an intense paced bootcame namely Coding Dojo.</p>\n  </div>\n  \n  <div id=\"image_container\">\n  <label>\n    <input type=\"radio\" name=\"fb\" checked=\"checked\" [routerLink]=\"['home']\" />\n    <img class='icon' src=\"home.png\" >\n  </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['js']\"/>\n      <img class='icon' src=\"JavaScript.png\">\n    </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['python']\"/>\n      <img class='icon' src=\"python.png\">\n    </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['ruby']\"/>\n      <img class='icon' src=\"RUBY.png\">\n    </label>\n  </div>\n</div>\n  <p>Things to do: </p>\n<ul>\n  <li>Get picture in</li>\n  <li>Display Banner</li>\n</ul>\n<router-outlet></router-outlet>\n\n"
+module.exports = "<div id=\"header\">\n\n  <img id=\"me\" src=\"alex.jpg\">\n  <div id=\"profile\">\n\n      <table>\n        <tr>\n        <th>Email</th>\n        <th>LxDemikz@gmail.com</th>\n      </tr>\n      <tr>\n        <th>Github</th>\n        <th><a href=\"https://github.com/Akademyx\">\n        <span class=\"color\" >Akademyx's Profile</span>\n        </a></th>\n      </tr>\n      <tr>\n        <th>LinkedIn</th>\n        <th><a href=\"https://www.linkedin.com/in/lxtran8501/\">\n          <span class=\"color\" >Alex Tran</span>\n        </a></th>\n      </tr>\n    </table>\n   <p id=\"bio\">I am a upcoming software developer with emphasis on web development. My education comes largely from an intense paced bootcame namely Coding Dojo.</p>\n  </div>\n \n  <div id=\"image_container\">\n  <label>\n    <input type=\"radio\" name=\"fb\" checked=\"checked\" [routerLink]=\"['']\" />\n    <img class='icon' src=\"home.png\" >\n  </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['js']\"/>\n      <img class='icon' src=\"JavaScript.png\">\n    </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['python']\"/>\n      <img class='icon' src=\"python.png\">\n    </label>\n    <label>\n      <input type=\"radio\" name=\"fb\" [routerLink]=\"['ruby']\"/>\n      <img class='icon' src=\"RUBY.png\">\n    </label>\n  </div>\n</div>\n\n<div id=\"line-break\"></div>\n<router-outlet></router-outlet>\n\n"
 
 /***/ }),
 
@@ -259,14 +259,14 @@ exports.HttpService = HttpService;
 /***/ "./src/app/js-component/js-component.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "*, body{\r\n    text-align: center;\r\n}\r\n.project {\r\n    height: 250px;\r\n    width: 400px;\r\n    border: 1px solid black;\r\n    margin: 15px;\r\n    padding: auto;\r\n    text-align:center;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n\r\n}\r\n.project:hover {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(grey), to(whitesmoke));\r\n    background: linear-gradient(grey, whitesmoke)\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/js-component/js-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  js-component works!\n</p>\n"
+module.exports = "<p>\n  js-component works!\n</p>\n\n<div class=\"project\" (click)=\"click()\"><h1>project 1</h1>\n</div>\n  \n<div class=\"project\"  (click)=\"click()\">project 2</div>\n<div class=\"project\" (mouseover)=\"hover()\" (mouseleave)=\"hover()\">project 3\n  <button class=\"btn\" type=\"button\" *ngIf=\"showButton\">Button</button>\n</div>"
 
 /***/ }),
 
@@ -288,8 +288,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var JsComponentComponent = /** @class */ (function () {
     function JsComponentComponent() {
+        this.showButton = false;
     }
     JsComponentComponent.prototype.ngOnInit = function () {
+    };
+    JsComponentComponent.prototype.hover = function () {
+        if (this.showButton == false) {
+            this.showButton = true;
+        }
+        else {
+            this.showButton = false;
+        }
     };
     JsComponentComponent = __decorate([
         core_1.Component({

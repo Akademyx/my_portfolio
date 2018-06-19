@@ -1,0 +1,19 @@
+*, body{
+    text-align: center;
+}
+.project {
+    height: 250px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: auto;
+    text-align:center;
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
+
+}
+
+.project:hover {
+    background: linear-gradient(grey, whitesmoke)
+}

@@ -8,7 +8,7 @@ import { RubyComponentComponent } from './ruby-component/ruby-component.componen
 
 
 const routes: Routes = [
-  {path: 'home', component:HomeComponent},
+  {path: '', component:HomeComponent},
   {path: 'js', component:JsComponentComponent},
   {path: 'python', component:PythonComponentComponent},
   {path: 'ruby', component:RubyComponentComponent},
