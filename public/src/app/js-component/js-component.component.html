@@ -2,10 +2,20 @@
   js-component works!
 </p>
 
-<div class="project" (click)="click()"><h1>project 1</h1>
+<div class="project" (mouseover)="hover(one)" (mouseleave)="hover(one)">
+  <img src="/assets/ledger.gif" alt="#" *ngIf="!one.isHovering">
+  <!-- <div id="hovered" *ngIf="isHovering">
+    <img class="description_icon" src="/assets/js2.png">
+  </div> -->
+  <img class="description_icon" src="/assets/js.png" *ngIf="one.isHovering">
 </div>
-  
+
 <div class="project"  (click)="click()">project 2</div>
-<div class="project" (mouseover)="hover()" (mouseleave)="hover()">project 3
-  <button class="btn" type="button" *ngIf="showButton">Button</button>
+
+
+
+
+<div class="project" (mouseover)="hover(three)" (mouseleave)="hover(three)">project 3
+  <button class="btn" type="button" *ngIf="three.isHovering">Button</button>
+  <p *ngIf="three.isHovering">Works!</p>
 </div>

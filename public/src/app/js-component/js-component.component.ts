@@ -6,16 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./js-component.component.css']
 })
 export class JsComponentComponent implements OnInit {
-  showButton= false;
+  // isHovering= false;
+  one = {
+    isHovering: false
+  }
+  two = {
+    isHovering: false 
+  }
+
+  three = {
+    isHovering: false
+  }
+  projects = [this.one, this.two, this.three];
   constructor() { }
 
   ngOnInit() {
   }
-  hover(){
-    if(this.showButton == false){
-      this.showButton = true;
+  
+  // hover(num){
+  //   if(this.isHovering == false){
+  //     this.isHovering = true;
+  //   } else {
+  //     this.isHovering = false
+  //   }
+  // }
+
+  hover(num){
+    if(this.projects[num].isHovering == false){
+      this.projects[num].isHovering = true;
     } else {
-      this.showButton = false
+      this.projects[num].isHovering = false
     }
   }
 

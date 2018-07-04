@@ -31,12 +31,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var home_component_1 = __webpack_require__("./src/app/home/home.component.ts");
 var js_component_component_1 = __webpack_require__("./src/app/js-component/js-component.component.ts");
 var python_component_component_1 = __webpack_require__("./src/app/python-component/python-component.component.ts");
 var ruby_component_component_1 = __webpack_require__("./src/app/ruby-component/ruby-component.component.ts");
 var routes = [
-    { path: '', component: home_component_1.HomeComponent },
+    { path: '', component: js_component_component_1.JsComponentComponent },
     { path: 'js', component: js_component_component_1.JsComponentComponent },
     { path: 'python', component: python_component_component_1.PythonComponentComponent },
     { path: 'ruby', component: ruby_component_component_1.RubyComponentComponent },
@@ -259,14 +258,14 @@ exports.HttpService = HttpService;
 /***/ "./src/app/js-component/js-component.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "*, body{\r\n    text-align: center;\r\n}\r\n.project {\r\n    height: 250px;\r\n    width: 400px;\r\n    border: 1px solid black;\r\n    margin: 15px;\r\n    padding: auto;\r\n    text-align:center;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n\r\n}\r\n.project:hover {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(grey), to(whitesmoke));\r\n    background: linear-gradient(grey, whitesmoke)\r\n}"
+module.exports = "*, body{\r\n    text-align: center;\r\n}\r\n.project {\r\n    height: 300px;\r\n    width: 500px;\r\n    border: 1px solid black;\r\n    margin: 15px;\r\n    padding: auto;\r\n    text-align:center;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n\r\n}\r\n.project:hover .description_icon{\r\n    height: 100px;\r\n    /* background:linear-gradient( red, whitesmoke); */\r\n}\r\n.project:hover{\r\n    background: -webkit-gradient(linear, left top, left bottom, from(grey), to(whitesmoke));\r\n    background: linear-gradient(grey, whitesmoke);\r\n    opacity: 0.3;\r\n}\r\nimg {\r\n    width:100%;\r\n}\r\n/* \r\nimg:hover{\r\n    opacity: 0.3;\r\n} */\r\n\r\n"
 
 /***/ }),
 
 /***/ "./src/app/js-component/js-component.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  js-component works!\n</p>\n\n<div class=\"project\" (click)=\"click()\"><h1>project 1</h1>\n</div>\n  \n<div class=\"project\"  (click)=\"click()\">project 2</div>\n<div class=\"project\" (mouseover)=\"hover()\" (mouseleave)=\"hover()\">project 3\n  <button class=\"btn\" type=\"button\" *ngIf=\"showButton\">Button</button>\n</div>"
+module.exports = "<p>\n  js-component works!\n</p>\n\n<div class=\"project\" (mouseover)=\"hover(one)\" (mouseleave)=\"hover(one)\">\n  <img src=\"/assets/ledger.gif\" alt=\"#\" *ngIf=\"!one.isHovering\">\n  <!-- <div id=\"hovered\" *ngIf=\"isHovering\">\n    <img class=\"description_icon\" src=\"/assets/js2.png\">\n  </div> -->\n  <img class=\"description_icon\" src=\"/assets/js.png\" *ngIf=\"one.isHovering\">\n</div>\n\n<div class=\"project\"  (click)=\"click()\">project 2</div>\n\n\n\n\n<div class=\"project\" (mouseover)=\"hover(three)\" (mouseleave)=\"hover(three)\">project 3\n  <button class=\"btn\" type=\"button\" *ngIf=\"three.isHovering\">Button</button>\n  <p *ngIf=\"three.isHovering\">Works!</p>\n</div>"
 
 /***/ }),
 
@@ -288,16 +287,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var JsComponentComponent = /** @class */ (function () {
     function JsComponentComponent() {
-        this.showButton = false;
+        // isHovering= false;
+        this.one = {
+            isHovering: false
+        };
+        this.two = {
+            isHovering: false
+        };
+        this.three = {
+            isHovering: false
+        };
+        this.projects = [this.one, this.two, this.three];
     }
     JsComponentComponent.prototype.ngOnInit = function () {
     };
-    JsComponentComponent.prototype.hover = function () {
-        if (this.showButton == false) {
-            this.showButton = true;
+    // hover(num){
+    //   if(this.isHovering == false){
+    //     this.isHovering = true;
+    //   } else {
+    //     this.isHovering = false
+    //   }
+    // }
+    JsComponentComponent.prototype.hover = function (num) {
+        if (this.projects[num].isHovering == false) {
+            this.projects[num].isHovering = true;
         }
         else {
-            this.showButton = false;
+            this.projects[num].isHovering = false;
         }
     };
     JsComponentComponent = __decorate([

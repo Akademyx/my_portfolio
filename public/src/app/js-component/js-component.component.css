@@ -2,8 +2,8 @@
     text-align: center;
 }
 .project {
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 500px;
     border: 1px solid black;
     margin: 15px;
     padding: auto;
@@ -14,6 +14,20 @@
 
 }
 
-.project:hover {
-    background: linear-gradient(grey, whitesmoke)
+.project:hover .description_icon{
+    height: 100px;
+    /* background:linear-gradient( red, whitesmoke); */
 }
+.project:hover{
+    background: linear-gradient(grey, whitesmoke);
+    opacity: 0.3;
+}
+
+img {
+    width:100%;
+}
+/* 
+img:hover{
+    opacity: 0.3;
+} */
+
