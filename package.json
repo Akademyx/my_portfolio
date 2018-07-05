@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/animations": "^6.0.4",
-    "body-parser": "^1.18.2",
+    "@angular/animations": "^6.0.7",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "g": "^2.0.1"
   }

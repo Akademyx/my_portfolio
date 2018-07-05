@@ -1,0 +1,8 @@
+h1 {
+    font-family: "Wallpoet";
+    font-size: 100px;
+    color:green;
+    text-shadow: 0 0 3px rgb(45, 228, 38),
+    0 0 5px rgb(11, 11, 209);
+
+}
