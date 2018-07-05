@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background: linear-gradient(rgba(101, 181, 224, 0.534), rgb(200, 238, 130))
 }
 #magic{
     color: #777;
@@ -126,3 +127,4 @@ label>img:hover {
     margin: auto;
     padding: auto;
 }
+

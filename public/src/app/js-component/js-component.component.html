@@ -1,21 +1,26 @@
-<p>
-  js-component works!
-</p>
+<h1>JavaScript Projects</h1>
+<div class="project">
+  <div class="project_gif">
+    <img src="/assets/ledger2.gif" alt="#" *ngIf="!one.isHovering">
+  </div>
+  <div class="project_data">
+    <h4>Ledger</h4>
+    <p>Ledger is built to simulate the use of an actual ledger, keeping record of purchases made, and sold.</p>
+    <h4>Technologies:</h4>
 
-<div class="project" (mouseover)="hover(one)" (mouseleave)="hover(one)">
-  <img src="/assets/ledger.gif" alt="#" *ngIf="!one.isHovering">
-  <!-- <div id="hovered" *ngIf="isHovering">
     <img class="description_icon" src="/assets/js2.png">
-  </div> -->
-  <img class="description_icon" src="/assets/js.png" *ngIf="one.isHovering">
+    <img class="description_icon" src="/assets/html.png">
+    <img class="description_icon" src="/assets/css.png">
+    <img class="description_icon" src="/assets/nodeJs.png">
+    <img class="description_icon" src="/assets/angular.png">
+    <img class="description_icon" src="/assets/mongodb.png">
+    
+  </div>
 </div>
 
-<div class="project"  (click)="click()">project 2</div>
-
-
-
-
-<div class="project" (mouseover)="hover(three)" (mouseleave)="hover(three)">project 3
-  <button class="btn" type="button" *ngIf="three.isHovering">Button</button>
-  <p *ngIf="three.isHovering">Works!</p>
+<div class="project">
+  <div id="unavailable">
+    <h2>Coming Soon!</h2>
+  </div>
 </div>
+
