@@ -10,8 +10,8 @@ app.set('views', __dirname + '/views');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
-const port = process.env.PORT || 8080;
-// const port = 8000
+// const port = process.env.PORT || 8080;
+const port = 8000
 
 
 
@@ -94,5 +94,5 @@ const port = process.env.PORT || 8080;
 
 
 app.listen(port, () => {
-    console.log("listening on port 8080");
+    console.log("listening on port 8000");
 });
