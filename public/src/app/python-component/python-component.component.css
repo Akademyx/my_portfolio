@@ -1,0 +1,112 @@
+*, body{
+    text-align: center;
+}
+.project {
+    height: 300px;
+    width: 700px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 0px 0px 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 6px;
+    background:linear-gradient(cyan,lightskyblue);
+
+}
+
+.project > .project_gif {
+    display: inline-block;
+    width: 450px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border-radius: inherit;
+    vertical-align: top;
+}
+.project > .project_data {
+    display: inline-block;
+    width: 237px;
+    height: -webkit-fill-available;
+    padding: 4px;
+    margin: 0px 0px 0px 0px;
+    /* background-color: green; */
+    /* border-radius: inherit; */
+    border-left: 1px solid black;
+    background: linear-gradient(#1f1a70, rgb(221, 221, 39));
+    text-align:left;
+}
+
+/* .project:hover .description_icon{
+    height: 100px; */
+    /* background:linear-gradient( red, whitesmoke); */
+/* } */
+/* .project:hover{
+    background: linear-gradient(grey, whitesmoke);
+    opacity: 0.3;
+} */
+
+img {
+    width:100%;
+}
+
+.project_data > img {
+    width: 50px;
+}
+
+#project2 {
+    background-image: url("/assets/ledger.gif");
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+}
+
+#unavailable{
+    text-align:center;
+    margin:auto auto;
+    width: 50%;
+    vertical-align: middle;
+    /* background-color: red; */
+    margin-top: 17%;
+}
+#unavailable > h2 {
+    font-family: 'Sofia';
+    font-size: 40px;
+    color: #FF0000;
+    text-shadow: 2px 2px 8px goldenrod;
+}
+h1 {
+    font-family: "Bungee";
+    font-size: 22px;
+    color: rgb(39, 24, 170);
+    text-shadow: 2px 2px 4px #daff08;
+}
+
+div > h4 {
+    font-family: "Coda Caption";
+    font-size: 16pt;
+    margin: 10px;
+    text-shadow: 0 1px 0 #ccc,
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+div > p {
+    font-family: "Concert One";
+    font-size: 12pt;
+    margin: auto;
+    color: white;
+}
+
+

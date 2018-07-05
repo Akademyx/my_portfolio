@@ -35,7 +35,7 @@
     /* background-color: green; */
     /* border-radius: inherit; */
     border-left: 1px solid black;
-    background: linear-gradient(rgb(104, 11, 11), rgb(95, 95, 7));
+    background: linear-gradient(rgb(220, 243, 14), rgb(41, 41, 5));
     text-align:left;
 }
 
@@ -108,8 +108,5 @@ div > p {
     margin: auto;
     color: white;
 }
-/* 
-img:hover{
-    opacity: 0.3;
-} */
+
 
