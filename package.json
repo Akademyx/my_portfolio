@@ -13,6 +13,8 @@
     "@angular/animations": "^6.0.7",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "g": "^2.0.1"
+    "g": "^2.0.1",
+    "mongoose": "^5.2.1",
+    "npm": "^6.1.0"
   }
 }
