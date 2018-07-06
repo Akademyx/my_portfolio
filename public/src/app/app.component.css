@@ -38,7 +38,7 @@ img#me {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* position:relative; */
-  background-color: rgba(0, 255, 0, 0.67)
+  /* background-color: rgba(0, 255, 0, 0.67) */
 }
 #line-break {
   height: auto;
@@ -95,16 +95,16 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 30px 0px #fde61c;
-    -moz-box-shadow: 0px 0px 30px 0px #fde61c;
-    box-shadow: 0px 0px 30px 0px #fde61c;
+    -webkit-box-shadow: 0px 0px 30px 13px #fde61c;
+    -moz-box-shadow: 0px 0px 30px 13px #fde61c;
+    box-shadow: 0px 0px 30px 13px #fde61c;
     /* -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67);
     box-shadow: 0px 0px 30px 0px rgba(0, 102, 255, 0.67); */
 }
 
 label > img {
-    height: 40px;
+    height: 70px;
 }
 
 h1{
@@ -115,9 +115,9 @@ label>img:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
-    box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+    -webkit-box-shadow: 0px 0px 30px 6px rgba(0, 255, 0, 0.67);
+    -moz-box-shadow: 0px 0px 30px 6px rgba(0, 255, 0, 0.67);
+    box-shadow: 0px 0px 30px 6px rgba(0, 255, 0, 0.67);
 }
 
 .project {
